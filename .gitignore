@@ -1,0 +1,30 @@
+# IDE Settings
+.vscode/
+.idea/
+
+# dependencies
+/node_modules
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# testing
+/coverage
+
+# production
+/build
+
+# Log Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.DS_Store
+.env.local
+.env.*.local
+
+# Cache
+.eslintcache
