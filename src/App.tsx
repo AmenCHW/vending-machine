@@ -4,15 +4,18 @@ import {
   Switch, Route
 } from "react-router-dom";
 
+import AddItem from "./pages/AddItem";
+import Home from "./pages/Home";
+
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/" exact>
-          <h1>Home</h1>
+          <Home />
         </Route>
         <Route path="/add">
-          <h1>Add items</h1>
+          <AddItem />
         </Route>
       </Switch>
     </Router>
