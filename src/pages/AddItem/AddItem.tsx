@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import BaseButton from "../../components/common/BaseButton";
-import BaseInput from "../../components/common/BaseInput";
+import { BaseButton } from "../../components/common/BaseButton";
+import { BaseInput } from "../../components/common/BaseInput";
 
-const AddItem: React.FC = () => {
+export const AddItem: React.FC = () => {
   const [value, setValue] = useState("")
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
@@ -21,5 +21,3 @@ const AddItem: React.FC = () => {
     </form>
   );
 }
-
-export default AddItem;

@@ -4,8 +4,8 @@ import {
   Switch, Route
 } from "react-router-dom";
 
-import AddItem from "./pages/AddItem/AddItem";
-import Home from "./pages/Home";
+import { AddItem } from "./pages/AddItem/AddItem";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
