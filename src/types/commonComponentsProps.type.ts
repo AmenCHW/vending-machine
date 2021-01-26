@@ -8,6 +8,7 @@ export type BaseButtonPropsT = {
 export type BaseInputPropsT = {
   type?: string,
   placeholder?: string,
+  name?: string,
   value: string,
   onChange: (e: ChangeEvent<HTMLInputElement>) => void,
 }
