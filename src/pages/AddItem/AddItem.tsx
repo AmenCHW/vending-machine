@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BaseButton } from "../../components/common/BaseButton";
 import { BaseInput } from "../../components/common/BaseInput";
 
-export const AddItem: React.FC = () => {
+export const AddItem = () => {
   const [value, setValue] = useState("")
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {

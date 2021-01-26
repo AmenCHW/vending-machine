@@ -1,11 +1,11 @@
 import { ChangeEvent } from "react";
 
-export interface BaseButtonPropsI {
+export type BaseButtonPropsT = {
   type?: "submit" | "reset" | "button",
   text: string,
 }
 
-export interface BaseInputPropsI {
+export type BaseInputPropsT = {
   type?: string,
   placeholder?: string,
   value: string,

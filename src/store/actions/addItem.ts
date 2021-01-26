@@ -1,4 +1,4 @@
 import { createAction } from "@reduxjs/toolkit";
-import { itemI } from "../../interfaces/item.interface"
+import { itemT } from "../../types/item.type"
 
-export const addItemAction = createAction<itemI>("item/add")
+export const addItemAction = createAction<itemT>("item/add")

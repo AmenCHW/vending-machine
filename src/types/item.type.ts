@@ -1,4 +1,4 @@
-export interface itemI {
+export type itemT = {
   id: string,
   title: string,
   image_url: string,

@@ -1,8 +1,8 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { initialStateI } from "../interfaces/initialState.interface";
+import { initialStateT } from "../types/initialState.type";
 import { addItemAction } from "./actions/addItem";
 
-const initialState: initialStateI = {
+const initialState: initialStateT = {
   items: []
 }
 

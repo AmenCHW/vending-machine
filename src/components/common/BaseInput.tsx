@@ -1,7 +1,7 @@
 import React from "react";
-import { BaseInputPropsI } from "../../interfaces/commonComponentsProps.interface";
+import { BaseInputPropsT } from "../../types/commonComponentsProps.type";
 
-export const BaseInput = (props: BaseInputPropsI) => {
+export const BaseInput = (props: BaseInputPropsT) => {
   return (
     <input
       type={props.type} {...props}
