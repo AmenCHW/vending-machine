@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import { AddItem } from "./pages/AddItem/AddItem";
-import { Home } from "./pages/Home";
+import { Home } from "./pages/Home/Home";
 
 function App() {
   return (
