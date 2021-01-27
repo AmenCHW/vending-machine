@@ -2,3 +2,8 @@
   height: $height;
   width: $width;
 }
+
+@mixin font($thickness, $size) {
+  font-weight: $thickness;
+  font-size: $size;
+}
