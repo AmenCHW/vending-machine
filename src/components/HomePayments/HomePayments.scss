@@ -19,4 +19,13 @@
       text-align: center;
     }
   }
+  .payments-coins {
+    padding: 3vh 3vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+  }
 }
