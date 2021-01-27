@@ -1,0 +1,22 @@
+@import "./src/styles/variables";
+@import "./src/styles/mixins";
+
+.back-button {
+  margin-top: 3vh;
+
+  @include size(5vh, 100%);
+  @include font(400, 18px);
+
+  background: $success-color;
+  color: #fff;
+
+  border-radius: 25px;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  &.disabled {
+    background: lighten($success-color, 15%);
+  }
+}

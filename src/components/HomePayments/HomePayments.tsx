@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { initialStateT } from "../../types/initialState.type"
 import { CoinButton } from "./CoinButton/CoinButton";
+import { BackButton } from "./BackButton/BackButton";
 import "./HomePayments.scss";
 
 export const HomePayments = () => {
@@ -11,6 +12,7 @@ export const HomePayments = () => {
     <aside className="home-payments">
       <main className="payments-main">
         <p className="payments-current">Your money:<br/>{cash}$</p>
+        <BackButton />
       </main>
       <div className="payments-coins">
         <CoinButton price={0.25}/>
