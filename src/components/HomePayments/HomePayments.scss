@@ -1,0 +1,22 @@
+@import "./src/styles/variables";
+@import "./src/styles/mixins";
+
+.home-payments {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  @include size(100%, 25%);
+  @include font(400, 33px);
+
+  .payments-main {
+    padding: 3vh 3vw;
+    @include size(auto, 100%);
+    border-radius: 25px;
+    box-shadow: 0 0 5px 10px #f2f2f2;
+
+    .payments-current {
+      text-align: center;
+    }
+  }
+}
