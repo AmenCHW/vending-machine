@@ -1,7 +1,8 @@
-import { ChangeEvent } from "react";
+import { MouseEvent, ChangeEvent } from "react";
 
 export type BaseButtonPropsT = {
   type?: "submit" | "reset" | "button",
+  onClick?: (e: MouseEvent<HTMLButtonElement>) => void,
   text: string,
 }
 
