@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { initialStateT } from "../../../types/initialState.type";
-import { itemT } from "../../../types/item.type";
 import { ItemEntity } from "./ItemEntity/ItemEntity";
 import "./ContentItems.scss";
 
