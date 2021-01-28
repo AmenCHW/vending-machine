@@ -1,0 +1,19 @@
+@import "./src/styles/mixins";
+
+.items-unit {
+  margin-top: 3vh;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 25%;
+  color: #fff;
+
+  .unit__img {
+    @include size(6vh, 6vh);
+  }
+
+  .unit__title {
+    @include font(400, 21px);
+  }
+}

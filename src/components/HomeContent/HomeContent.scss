@@ -1,0 +1,38 @@
+@import "./src/styles/variables";
+@import "./src/styles/mixins";
+
+.home__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include size(100vh, 75%);
+
+  .content__machine {
+    padding: 3vh 3vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    @include size(100%, 60%);
+    background: #f271a7;
+
+    .machine__title {
+      padding: 2.5vh 0;
+      width: 100%;
+      background: $machine-content-color;
+      color: #fff;
+      border-radius: 10px;
+      @include font(400, 33px);
+      text-align: center;
+    }
+
+    .machine__items {
+      @include size(60%, 100%);
+      background: $machine-content-color;
+      border-radius: 10px;
+    }
+  }
+}

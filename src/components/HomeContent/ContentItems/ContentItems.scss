@@ -1,0 +1,8 @@
+@import "./src/styles/mixins";
+
+.content-items {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  @include size(auto, 100%);
+}
