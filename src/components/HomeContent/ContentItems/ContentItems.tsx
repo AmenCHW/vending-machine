@@ -6,11 +6,11 @@ import { ItemEntity } from "./ItemEntity/ItemEntity";
 import "./ContentItems.scss";
 
 export const ContentItems = () => {
-  const items: Array<itemT> = useSelector((state: initialStateT) => state.items);
+  const items = useSelector((state: initialStateT) => state.items);
 
   return (
     <div className="content-items">{
-      items.map((item: itemT) => (
+      items.map((item) => (
         <ItemEntity {...item}/>
       ))
     }</div>
