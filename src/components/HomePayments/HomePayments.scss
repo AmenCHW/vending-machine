@@ -10,6 +10,7 @@
   @include font(400, 33px);
 
   .payments-main {
+    margin-top: 25px;
     padding: 3vh 3vw;
     @include size(auto, 100%);
     border-radius: 25px;

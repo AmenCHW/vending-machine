@@ -10,10 +10,10 @@ export const HomePayments = () => {
 
   return (
     <aside className="home-payments">
-      <main className="payments-main">
+      <article className="payments-main">
         <p className="payments-current">Your money:<br/>{cash}$</p>
         <BackButton />
-      </main>
+      </article>
       <div className="payments-coins">
         <CoinButton price={0.25}/>
         <CoinButton price={0.5}/>

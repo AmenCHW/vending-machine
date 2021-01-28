@@ -8,8 +8,9 @@ export const AddItem = () => {
   const [item, setItem] = useState<itemT>({
     id: "",
     title: "",
-    image_url: "",
-    quantity: 0
+    price: 0,
+    quantity: 0,
+    image_url: ""
   })
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
