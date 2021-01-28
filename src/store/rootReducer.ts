@@ -47,10 +47,12 @@ const initialState: initialStateT = {
 
 const rootReducer = createReducer(initialState, {
   [addItemAction.type]: (state, action) => {
-    return {...state, items: [...state.items, action.payload]}
+    state.items.push(action.payload);
+    return state;
   },
   [addCashAction.type]: (state, action) => {
-    return {...state, cash: state.cash+action.payload}
+    state.cash += action.payload;
+    return state;
   },
 })
 
