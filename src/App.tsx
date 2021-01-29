@@ -4,7 +4,6 @@ import {
   Switch, Route
 } from "react-router-dom";
 
-import { AddItem } from "./pages/AddItem/AddItem";
 import { Home } from "./pages/Home/Home";
 
 function App() {
@@ -13,9 +12,6 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Home />
-        </Route>
-        <Route path="/add">
-          <AddItem />
         </Route>
       </Switch>
     </Router>
