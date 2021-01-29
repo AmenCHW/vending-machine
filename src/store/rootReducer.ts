@@ -2,6 +2,7 @@ import { createReducer } from "@reduxjs/toolkit";
 import { initialStateT } from "../types/initialState.type";
 import { addItemAction } from "./actions/addItem";
 import { addCashAction } from "./actions/addCash";
+import { buyItemAction } from "./actions/buyItem";
 import { nanoid } from "nanoid";
 
 const initialState: initialStateT = {
@@ -54,6 +55,12 @@ const rootReducer = createReducer(initialState, {
     state.cash += action.payload;
     return state;
   },
+  [buyItemAction.type]: (state, action) => {
+    const itemIndex = state.items.findIndex(i => i.id === action.payload);
+    state.items[itemIndex].quantity -= 1;
+    state.cash -= state.items[itemIndex].price;
+    return state;
+  }
 })
 
 export default rootReducer;
