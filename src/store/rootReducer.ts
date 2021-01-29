@@ -1,9 +1,12 @@
-import { createReducer } from "@reduxjs/toolkit";
+import { createAction, createReducer } from "@reduxjs/toolkit";
 import { initialStateT } from "../types/initialState.type";
-import { addItemAction } from "./actions/addItem";
-import { addCashAction } from "./actions/addCash";
-import { buyItemAction } from "./actions/buyItem";
+import { itemT } from "../types/item.type";
 import { nanoid } from "nanoid";
+
+export const addCashAction = createAction<number>("add/cash")
+export const addItemAction = createAction<itemT>("add/item")
+export const buyItemAction = createAction<string>("buy/item")
+
 
 const initialState: initialStateT = {
   items: [
