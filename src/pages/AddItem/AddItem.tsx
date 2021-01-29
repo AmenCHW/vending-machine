@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { nanoid } from "nanoid"
-import { BaseButton } from "../../components/common/BaseButton";
-import { BaseInput } from "../../components/common/BaseInput";
-import { itemT } from "../../types/item.type";
+import { BaseButton } from "components/common/BaseButton";
+import { BaseInput } from "components/common/BaseInput";
+import { itemT } from "types/item.type";
 
 export const AddItem = () => {
   const [item, setItem] = useState<itemT>({

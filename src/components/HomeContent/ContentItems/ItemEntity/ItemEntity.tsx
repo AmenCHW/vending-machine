@@ -1,8 +1,8 @@
 import React from "react";
-import { itemT } from "../../../../types/item.type";
+import { itemT } from "types/item.type";
 import { useDispatch, useSelector } from "react-redux";
-import { initialStateT } from "../../../../types/initialState.type";
-import { buyItemAction } from "../../../../store/rootReducer";
+import { initialStateT } from "types/initialState.type";
+import { buyItemAction } from "store/rootReducer";
 import "./ItemEntity.scss";
 import toast from "toasted-notes";
 

@@ -1,8 +1,8 @@
 import React from "react";
 import "./BackButton.scss";
 import {useDispatch, useSelector} from "react-redux";
-import { initialStateT } from "../../../types/initialState.type";
-import { addCashAction } from "../../../store/rootReducer";
+import { initialStateT } from "types/initialState.type";
+import { addCashAction } from "store/rootReducer";
 
 export const BackButton = () => {
   const cash = useSelector((state: initialStateT) => state.cash);

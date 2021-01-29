@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { initialStateT } from "../../types/initialState.type"
+import { initialStateT } from "types/initialState.type"
 import { CoinButton } from "./CoinButton/CoinButton";
 import { BackButton } from "./BackButton/BackButton";
 import "./HomePayments.scss";
