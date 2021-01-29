@@ -11,14 +11,20 @@ export const ItemEntity = ({id, title, price, quantity, image_url}: itemT) => {
   const dispatch = useDispatch();
   const cash = useSelector((state: initialStateT) => state.cash);
 
+  const notify = (msg: string): void => {
+    toast.notify(msg, {
+      duration: 1000
+    })
+  }
+
   const handleClick = () => {
     if (quantity === 0) {
-      toast.notify("Out of stock");
+      notify("Out of stock");
     } else if (cash < price) {
-      toast.notify("Not enough money");
+      notify("Not enough money");
     } else {
       dispatch(buyItemAction(id));
-      toast.notify(`${title} has been successfully ordered`)
+      notify(`${title} has been successfully ordered`)
     }
   }
 
