@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { initialStateT } from "../../../../types/initialState.type";
 import { buyItemAction } from "../../../../store/rootReducer";
 import "./ItemEntity.scss";
+import toast from "toasted-notes";
 
 
 export const ItemEntity = ({id, title, price, quantity, image_url}: itemT) => {
@@ -12,11 +13,12 @@ export const ItemEntity = ({id, title, price, quantity, image_url}: itemT) => {
 
   const handleClick = () => {
     if (quantity === 0) {
-      console.log("Out of stock");
+      toast.notify("Out of stock");
     } else if (cash < price) {
-      console.log("Not enough money");
+      toast.notify("Not enough money");
     } else {
       dispatch(buyItemAction(id));
+      toast.notify(`${title} has been successfully ordered`)
     }
   }
 
