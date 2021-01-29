@@ -11,7 +11,7 @@ export const HomePayments = () => {
   return (
     <aside className="home-payments">
       <article className="payments-main">
-        <p className="payments-current">Your money:<br/>{cash}$</p>
+        <p className="payments-current">Your money:<br/>{cash.toFixed(2)}$</p>
         <BackButton />
       </article>
       <div className="payments-coins">
