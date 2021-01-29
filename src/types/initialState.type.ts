@@ -1,6 +1,6 @@
-import { itemT } from "./item.type";
+import { ItemType } from "./item.type";
 
-export type initialStateT = {
-  items: itemT[],
+export type InitialStateType = {
+  items: ItemType[],
   cash: number
 }
