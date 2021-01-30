@@ -17,14 +17,17 @@ export const App = () => {
       <Switch>
         <Route path="/" exact>
           {
-            itemsAmount > 12 ? () => <Redirect to="/complex-items"/>: <Home />
+            itemsAmount > 12 ? <Redirect to="/complex-items"/>: <Home />
           }
         </Route>
         <Route path="/complex-items">
-          <ErrorTemplate
-            message="Vending machine can't load more than 3 rows of items"
-            instructions="Please, edit the store, so that you should go home"
-          />
+          {
+            itemsAmount <= 12 ? <Redirect to="/" /> : <ErrorTemplate
+              message="Vending machine can't load more than 3 rows of items"
+              instructions="Please, edit the store, so that you should go home"
+            />
+
+          }
         </Route>
       </Switch>
     </Router>
