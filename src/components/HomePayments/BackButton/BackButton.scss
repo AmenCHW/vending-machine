@@ -9,14 +9,16 @@
 
   background: $success-color;
   color: #fff;
-
+  
   border-radius: 25px;
   border: none;
   outline: none;
-
+  
+  font-weight: 700;
+  
   cursor: pointer;
-
+  
   &.disabled {
-    background: lighten($success-color, 15%);
+    cursor: not-allowed;
   }
 }
