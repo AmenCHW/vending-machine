@@ -8,10 +8,10 @@ type ErrorTemplatePropsType = {
 
 export const ErrorTemplate= ({ message, instructions }: ErrorTemplatePropsType) => {
   return (
-    <section className="error__section">
-      <div className="error__card">
-        <h1 className="card__title">{message}</h1>
-        <p className="card__subtitle">{instructions}</p>
+    <section className="centered-section error__section">
+      <div className="card">
+        <h1 className="card-title">{message}</h1>
+        <p className="card-subtitle">{instructions}</p>
       </div>
     </section>
   )

@@ -23,11 +23,16 @@
       padding: 2.5vh 0;
       width: 100%;
       background: rgba(#fff, 0.1);
-      color: #fff;
       border-radius: 10px;
       @include font(700, 33px);
       text-transform: uppercase;
       text-align: center;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        cursor: default;
+      }
     }
 
     .machine__items {

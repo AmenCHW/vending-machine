@@ -1,28 +1,20 @@
 @import "./src/styles/mixins";
 
-.error__section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.error__card {
+  padding: 5vh 2.5vw;
 
-  @include size(100vh, 100vw);
+  flex-flow: column nowrap;
+  @include size(auto, 25vw);
 
-  .error__card {
-    padding: 5vh 2.5vw;
-    
-    @extend .error__section;
-    flex-flow: column nowrap;
-    @include size(auto, 25vw);
+  border: 1px solid #fff;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 5px #ccc;
 
-    border: 1px solid #fff;
-    border-radius: 25px;
-    box-shadow: 0 0 10px 5px #ccc;
+  .card__title, .card__subtitle {
+    text-align: center;
+  }
 
-    .card__title, .card__subtitle {
-      text-align: center;
-    }
-    .card__subtitle {
-      margin-top: 1em;
-    }
+  .card__subtitle {
+    margin-top: 1em;
   }
 }
