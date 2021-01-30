@@ -51,6 +51,69 @@ const actualState: ActualStateType = {
       quantity: 3,
       image_url: "https://art.pixilart.com/67a5851268e95c0.png"
     },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
+    {
+      id: nanoid(),
+      title: "Cookie",
+      price: 0.1,
+      quantity: 3,
+      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
+    },
   ],
   cash: 0
 }
