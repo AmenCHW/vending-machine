@@ -1,5 +1,5 @@
 import { createAction, createReducer } from "@reduxjs/toolkit";
-import { InitialStateType } from "../types/initialState.type";
+import { ActualStateType } from "../types/ActualStateType";
 import { ItemType } from "../types/item.type";
 import { nanoid } from "nanoid";
 
@@ -8,48 +8,41 @@ export const addItemAction = createAction<ItemType>("add/item")
 export const buyItemAction = createAction<string>("buy/item")
 
 
-const initialState: InitialStateType = {
+const actualState: ActualStateType = {
   items: [
     {
-      id: nanoid().toString(),
+      id: nanoid(),
       title: "Cookie",
       price: 0.1,
       quantity: 3,
       image_url: "https://art.pixilart.com/67a5851268e95c0.png"
     },
     {
-      id: nanoid().toString(),
+      id: nanoid(),
       title: "Cookie",
       price: 0.1,
       quantity: 3,
       image_url: "https://art.pixilart.com/67a5851268e95c0.png"
     },
     {
-      id: nanoid().toString(),
+      id: nanoid(),
       title: "Cookie",
       price: 0.1,
       quantity: 3,
       image_url: "https://art.pixilart.com/67a5851268e95c0.png"
     },
     {
-      id: nanoid().toString(),
+      id: nanoid(),
       title: "Cookie",
       price: 0.1,
       quantity: 3,
       image_url: "https://art.pixilart.com/67a5851268e95c0.png"
     },
-    {
-      id: nanoid().toString(),
-      title: "Cookie",
-      price: 0.1,
-      quantity: 0,
-      image_url: "https://art.pixilart.com/67a5851268e95c0.png"
-    }
   ],
   cash: 0
 }
 
-const rootReducer = createReducer(initialState, builder => {
+const rootReducer = createReducer(actualState, builder => {
     builder.addCase(addItemAction, (state, action) => {
       state.items.push(action.payload);
     })

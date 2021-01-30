@@ -1,6 +1,6 @@
 import { ItemType } from "./item.type";
 
-export type InitialStateType = {
+export type ActualStateType = {
   items: ItemType[],
   cash: number
 }
