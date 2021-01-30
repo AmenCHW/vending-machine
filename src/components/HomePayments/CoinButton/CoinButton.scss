@@ -2,16 +2,19 @@
 @import "./src/styles/mixins";
 
 .coin-btn {
-  @include size(60px, 60px);
+  @include size(75px, 75px);
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background: $coin-color;
+  background: url("http://localhost:3000/coin.png");
+  background-position: center;
+  background-size: cover;
 
-  border: 2px solid darken($coin-color, 10%);
-  border-radius: 50%;
+  border: none;
   outline: none;
+
+  font-weight: 700;
 
   cursor: pointer;
 }
