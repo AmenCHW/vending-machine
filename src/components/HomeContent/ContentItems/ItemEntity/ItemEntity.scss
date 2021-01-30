@@ -10,7 +10,7 @@
   color: #fff;
 
   .unit__img {
-    @include size(6vh, 6vh);
+    @include size(7vh, auto);
   }
 
   .unit__title {
