@@ -35,9 +35,9 @@ export const ItemEntity = ({id, title, price, quantity, image_url}: ItemType) =>
     >
       <img src={image_url} alt="Product Preview" className="unit__img"/>
       <span className="unit__title">{title} {price}$</span>
-      <p className="unit__subtitle">
-        {quantity ? `Available items ${quantity}` : "Out of stock"}
-      </p>
+      <p className="unit__amount">{
+        quantity ? `Available items ${quantity}`:<span className="error">Out of stock</span>
+      }</p>
     </article>
   )
 }
