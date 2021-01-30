@@ -1,21 +1,32 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import {
   BrowserRouter as Router,
-  Switch, Route
+  Switch, Route, Redirect
 } from "react-router-dom";
+import { ActualStateType } from 'store/rootReducer';
 
+import { ErrorTemplate } from "./pages/ErrorTemplate/ErrorTemplate"
 import { Home } from "./pages/Home/Home";
 
-function App() {
+export const App = () => {
+  const itemsAmount = useSelector((state: ActualStateType) => state.items).length;
+
   return (
     <Router>
       <Switch>
         <Route path="/" exact>
-          <Home />
+          {
+            itemsAmount > 12 ? () => <Redirect to="/complex-items"/>: <Home />
+          }
+        </Route>
+        <Route path="/complex-items">
+          <ErrorTemplate
+            message="Vending machine can't load more than 3 rows of items"
+            instructions="Please, edit the store, so that you should go home"
+          />
         </Route>
       </Switch>
     </Router>
   );
 }
-
-export default App;
