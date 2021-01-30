@@ -1,7 +1,20 @@
 import { createAction, createReducer } from "@reduxjs/toolkit";
-import { ActualStateType } from "../types/ActualStateType";
-import { ItemType } from "../types/item.type";
 import { nanoid } from "nanoid";
+
+
+export type ItemType = {
+  id: string,
+  title: string,
+  price: number,
+  quantity: number
+  image_url: string,
+}
+
+export type ActualStateType = {
+  items: ItemType[],
+  cash: number
+}
+
 
 export const addCashAction = createAction<number>("add/cash")
 export const addItemAction = createAction<ItemType>("add/item")
@@ -41,6 +54,7 @@ const actualState: ActualStateType = {
   ],
   cash: 0
 }
+
 
 const rootReducer = createReducer(actualState, builder => {
     builder.addCase(addItemAction, (state, action) => {
