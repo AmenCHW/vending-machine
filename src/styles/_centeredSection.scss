@@ -1,0 +1,9 @@
+@import "mixins";
+
+.centered-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include size(100vh, 100vw);
+}

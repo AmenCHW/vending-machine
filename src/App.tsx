@@ -9,7 +9,6 @@ import { ActualStateType } from 'store/rootReducer';
 import { ErrorTemplate } from "./pages/ErrorTemplate/ErrorTemplate"
 import { ItemsRestock } from "./pages/ItemsRestock";
 import { Home } from "./pages/Home/Home";
-import "./App.scss";
 
 export const App = () => {
   const itemsAmount = useSelector((state: ActualStateType) => state.items).length;

@@ -1,13 +1,5 @@
-@import "./src/styles/variables";
-@import "./src/styles/mixins";
-
-.centered-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include size(100vh, 100vw);
-}
+@import "./variables";
+@import "./mixins";
 
 .card {
   padding: 5vh 2.5vw;

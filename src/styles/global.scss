@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import "./centeredSection";
+@import "./card";
 
 * {
   font-family: "Ubuntu Mono", monospace;
@@ -10,3 +12,4 @@
 body {
   font-size: 18px;
 }
+
