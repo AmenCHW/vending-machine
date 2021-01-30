@@ -16,4 +16,12 @@
   .unit__title {
     @include font(400, 21px);
   }
+
+  .unit__amount {
+    @include font(700, 16px);
+    .error {
+      color: #ff0000;
+    }
+  }
+  
 }

@@ -12,26 +12,29 @@
     padding: 3vh 3vw;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-flow: column nowrap;
 
     @include size(100%, 60%);
-    background: #f271a7;
+    background: url("https://allfreedesigns.com/wp-content/uploads/2015/06/black-patterns-16.jpg");
+
 
     .machine__title {
       padding: 2.5vh 0;
       width: 100%;
-      background: $machine-content-color;
+      background: rgba(#fff, 0.1);
       color: #fff;
       border-radius: 10px;
-      @include font(400, 33px);
+      @include font(700, 33px);
+      text-transform: uppercase;
       text-align: center;
     }
 
     .machine__items {
-      @include size(60%, 100%);
-      background: $machine-content-color;
+      padding-bottom: 3vh;
+      margin-top: 3vh;
+      @include size(auto, 100%);
+      background: rgba(#fff, 0.1);
       border-radius: 10px;
     }
   }
