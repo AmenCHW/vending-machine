@@ -1,15 +1,14 @@
 import React from "react";
-import { ItemType } from "types/item.type";
 import { useDispatch, useSelector } from "react-redux";
-import { InitialStateType } from "types/initialState.type";
 import { buyItemAction } from "store/rootReducer";
+import { ItemType, ActualStateType } from "store/rootReducer";
 import "./ItemEntity.scss";
 import toast from "toasted-notes";
 
 
 export const ItemEntity = ({id, title, price, quantity, image_url}: ItemType) => {
   const dispatch = useDispatch();
-  const cash = useSelector((state: InitialStateType) => state.cash);
+  const cash = useSelector((state: ActualStateType) => state.cash);
 
   const notify = (msg: string): void => {
     toast.notify(msg, {

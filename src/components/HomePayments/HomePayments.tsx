@@ -1,12 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { InitialStateType } from "types/initialState.type"
+import { ActualStateType } from "store/rootReducer"
 import { CoinButton } from "./CoinButton/CoinButton";
 import { BackButton } from "./BackButton/BackButton";
 import "./HomePayments.scss";
 
 export const HomePayments = () => {
-  const cash = useSelector((state: InitialStateType) => state.cash)
+  const cash = useSelector((state: ActualStateType) => state.cash)
 
   return (
     <aside className="home-payments">

@@ -1,11 +1,11 @@
 import React from "react";
 import "./BackButton.scss";
 import {useDispatch, useSelector} from "react-redux";
-import { InitialStateType } from "types/initialState.type";
+import { ActualStateType } from "store/rootReducer";
 import { addCashAction } from "store/rootReducer";
 
 export const BackButton = () => {
-  const cash = useSelector((state: InitialStateType) => state.cash);
+  const cash = useSelector((state: ActualStateType) => state.cash);
   const dispatch = useDispatch();
 
   const handleClick = () => {
