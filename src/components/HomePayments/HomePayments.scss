@@ -13,8 +13,8 @@
     margin-top: 25px;
     padding: 3vh 3vw;
     @include size(auto, 100%);
+    background: $transparent-white;
     border-radius: 25px;
-    background: rgba(#fff, 0.1);
 
     .payments-current {
       text-align: center;

@@ -16,20 +16,20 @@
     flex-flow: column nowrap;
 
     @include size(100%, 60%);
-    background: url("https://allfreedesigns.com/wp-content/uploads/2015/06/black-patterns-16.jpg");
+    background: url("http://localhost:3000/static/machine-bg.jpg");
 
 
     .machine__title {
       padding: 2.5vh 0;
       width: 100%;
-      background: rgba(#fff, 0.1);
+      background: $transparent-white;
       border-radius: 10px;
       @include font(700, 33px);
       text-transform: uppercase;
       text-align: center;
 
       a {
-        color: #fff;
+        color: $white;
         text-decoration: none;
         cursor: default;
       }
@@ -39,7 +39,7 @@
       padding-bottom: 3vh;
       margin-top: 3vh;
       @include size(auto, 100%);
-      background: rgba(#fff, 0.1);
+      background: $transparent-white;
       border-radius: 10px;
     }
   }

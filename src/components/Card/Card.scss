@@ -10,9 +10,9 @@
   flex-flow: column nowrap;
   @include size(auto, 25vw);
 
-  border: 1px solid #fff;
+  border: 1px solid $white;
   border-radius: 25px;
-  box-shadow: 0 0 10px 5px #ccc;
+  box-shadow: 0 0 10px 5px $grey;
 
   .card-title, .card-subtitle {
     text-align: center;
