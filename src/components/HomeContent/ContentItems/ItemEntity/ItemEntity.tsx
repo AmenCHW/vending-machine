@@ -29,7 +29,7 @@ export const ItemEntity = ({id, title, price, quantity, image_url}: ItemType) =>
 
   return (
     <article
-      className="items-unit"
+      className={`items-unit ${quantity ? "" : "empty"}`}
       onClick={handleClick}
     >
       <img src={image_url} alt="Product Preview" className="unit__img"/>
