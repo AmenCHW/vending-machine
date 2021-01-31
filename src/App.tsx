@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import { ActualStateType } from 'store/rootReducer';
 
-import { ErrorTemplate } from "./pages/ErrorTemplate/ErrorTemplate"
+import { ErrorTemplate } from "./pages/ErrorTemplate"
 import { ItemsRestock } from "./pages/ItemsRestock";
 import { Home } from "./pages/Home/Home";
 
