@@ -1,4 +1,5 @@
 import React from "react";
+import { CenteredSection } from "components/CenteredSection/CenteredSection";
 import { Card } from "components/Card/Card";
 
 type ErrorTemplatePropsType = {
@@ -8,10 +9,10 @@ type ErrorTemplatePropsType = {
 
 export const ErrorTemplate = ({ message, instructions }: ErrorTemplatePropsType) => {
   return (
-    <section className="centered-section">
+    <CenteredSection>
       <Card title={message}>
         <p className="card-subtitle">{instructions}</p>
       </Card>
-    </section>
+    </CenteredSection>
   )
 }

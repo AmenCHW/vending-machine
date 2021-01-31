@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import toast from "toasted-notes";
 import { ActualStateType, restockItemsAction } from "../store/rootReducer";
+import { CenteredSection } from "components/CenteredSection/CenteredSection";
 import { Card } from "components/Card/Card";
 
 
@@ -23,13 +24,13 @@ export const ItemsRestock = () => {
   }
 
   return (
-    <section className="centered-section restock">
+    <CenteredSection>
       <Card key={title} title={title}>
         <button
           className="card-btn"
           onClick={handleClick}
         >Restock</button>
       </Card>
-    </section>
+    </CenteredSection>
   )
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import { HomeContent } from "components/HomeContent/HomeContent";
+import { CenteredSection } from "../components/CenteredSection/CenteredSection";
 
 export const Home = () => {
   return (
-    <section className="centered-section">
+    <CenteredSection>
       <HomeContent />
-    </section>
+    </CenteredSection>
   )
 };
