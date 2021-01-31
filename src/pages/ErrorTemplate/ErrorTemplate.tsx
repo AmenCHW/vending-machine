@@ -6,7 +6,7 @@ type ErrorTemplatePropsType = {
   instructions: string
 }
 
-export const ErrorTemplate= ({ message, instructions }: ErrorTemplatePropsType) => {
+export const ErrorTemplate = ({ message, instructions }: ErrorTemplatePropsType) => {
   return (
     <section className="centered-section error__section">
       <div className="card">
