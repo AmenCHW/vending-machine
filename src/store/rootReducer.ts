@@ -108,7 +108,7 @@ const actualState: ActualStateType = {
       price: 0.1,
       quantity: 3,
       image_url: "https://art.pixilart.com/67a5851268e95c0.png"
-    },
+    }
   ],
   earnedCash: 0,
   cash: 0
