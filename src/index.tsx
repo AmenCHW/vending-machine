@@ -6,7 +6,7 @@ import "toasted-notes/src/styles.css";
 
 import rootReducer from "./store/rootReducer";
 import { App } from "./App";
-import "./styles/global.scss";
+import "./index.scss";
 
 
 const store = configureStore({
