@@ -21,4 +21,15 @@ const app = (
   </React.StrictMode>
 );
 
+declare global {
+  interface Window {
+    Cypress: any,
+    store: any
+  }
+}
+
+if (window.Cypress) {
+  window.store = store
+}
+
 render(app, document.getElementById('root'));

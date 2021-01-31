@@ -14,7 +14,7 @@ export const BackButton = () => {
 
   return (
     <button
-      className={`back-button ${!cash ? "disabled" : ""}`}
+      className={`back-btn ${!cash ? "disabled" : ""}`}
       onClick={handleClick}
     >Get your money back</button>
   )

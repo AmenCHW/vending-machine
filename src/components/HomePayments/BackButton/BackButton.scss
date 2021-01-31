@@ -1,7 +1,7 @@
 @import "./src/styles/variables";
 @import "./src/styles/mixins";
 
-.back-button {
+.back-btn {
   margin-top: 3vh;
 
   @include size(5vh, 100%);
