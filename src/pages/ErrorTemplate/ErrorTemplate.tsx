@@ -1,4 +1,5 @@
 import React from "react";
+import { Card } from "components/Card/Card";
 import "./ErrorTemplate.scss";
 
 type ErrorTemplatePropsType = {
@@ -9,10 +10,9 @@ type ErrorTemplatePropsType = {
 export const ErrorTemplate = ({ message, instructions }: ErrorTemplatePropsType) => {
   return (
     <section className="centered-section error__section">
-      <div className="card">
-        <h1 className="card-title">{message}</h1>
+      <Card title={message}>
         <p className="card-subtitle">{instructions}</p>
-      </div>
+      </Card>
     </section>
   )
 }
